@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace CST_117_Exercise_1
 {
-    public partial class Form1 : Form
+    public partial class Exercise1 : Form
     {
-        public Form1()
+        public Exercise1()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome "+usernameTextBox.Text+", to Ray Programming", "Welcome");
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
